@@ -1,0 +1,15 @@
+{
+    "extends": "./tsconfig.build.json",
+    "include": [
+        "packages",
+        "examples"
+    ],
+    "compilerOptions": {
+        "allowJs": false,
+        "baseUrl": ".",
+        "typeRoots": [
+            "./node_modules/@types",
+            "./types"
+        ]
+    }
+}
