@@ -7,11 +7,11 @@
   "module": "dist/motive.ese.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "tsdx watch --tsconfig tsconfig.json --verbose --noClean",
+    "build": "tsdx build --tsconfig tsconfig.json",
+    "test": "tsdx test --passWithNoTests --runInBand",
     "size": "size-limit",
-    "analyze": "size-limit --whey",
-    "test": "react-scripts test",
+    "analyze": "size-limit --why",
     "eject": "react-scripts eject",
     "generate-theme": "npx @emeks/antd-custom-theme-generator -w --antd ../../node_modules/antd ./src/assets/styles/custom-theme.less ./src/assets/styles/styles.min.css"
   },
@@ -78,5 +78,17 @@
   "repository": "https://github.com/webitget/motive.git",
   "publishConfig": {
     "access": "public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
