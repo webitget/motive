@@ -7,6 +7,18 @@
     "engines": {
         "node": ">=10"
     },
+    "scripts": {
+        "lerna": "lerna",
+        "start": "lerna run start --stream --parallel --scope @webit/motive",
+        "test": "lerna run test --stream --parallel --scope @webit/motive*",
+        "test:coverage": "lerna run test --stream -- -- -- --coverage",
+        "bootstrap": "cd packages/codemod && npm i && cd ../.. && lerna bootstrap --hoist --strict --ignore-scripts --ignore @webit/motive-codemod ----scope @webit/motive*",
+        "lint": "eslint c ./.eslintrc packages examples",
+        "lint:fix": "npm run lint -- --quiet --fix",
+        "build": "lerna run build --scope @webit/motive*",
+        "versionup": "npm run lerna version --conventional-commits --no-git-tag-version --scope @webit/motive*",
+        "nuk": "rm -rf node_modules; for d in for d in packages/*/node_modules; do echo $d; rm -rf $d; done; for d in for d in packages/*/dist; do echo $d; rm -rf $d; done; for d in packages/*/dist; do echo $d; rm -rf $d; done; for d in examples/*/node_modules; do echo $d; rm -rf $d; done;  for d in examples/*/package-lock.json; do echo $d; rm -rf $d; done; for d in packages/*/package-lock.json; do echo $d; rm -rf $d; done;"
+    },
     "lint-staged": {
         "*.(js,jsx,ts,tsx}": [
             "npm run lint:fix"
