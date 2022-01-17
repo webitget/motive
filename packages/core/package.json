@@ -1,6 +1,6 @@
 {
   "name": "@webit/motive",
-  "version": "1.0.1",
+  "version": "1.0.2-alpha.0",
   "description": "motive is a React-based framework for building data-intensive applications in no time. It ships with Ant Design System",
   "private": false,
   "main": "dist/index.js",
