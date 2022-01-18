@@ -1,7 +1,5 @@
 {
-    "name": "motivelinjs-rp",
-    "author": "WebIT",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "license": "MIT",
     "private": false,
     "engines": {
@@ -29,6 +27,8 @@
             "pre-commit": "lint-staged"
         }
     },
+    "name": "motivelinjs-rp",
+    "author": "WebIT",
     "devDependencies": {
         "@types/jest": "^27.4.0",
         "@types/react": "^17.0.38",
