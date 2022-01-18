@@ -1,7 +1,7 @@
 {
     "name": "@webit/motive-codemod",
     "version": "1.0.2-alpha.0",
-    "description": "motive Codemod CLI. motive is a React-based framework for building data-intensive applications in no time. It ships with Ant Design System",
+    "description": "motive Codemod CLI. motive is a React framework for building data-intensive applications in no time. It ships with Ant Design System",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "private": false,
@@ -14,7 +14,8 @@
     },
     "scripts": {
         "build": "tsc -d -p tsconfig.json",
-        "dev": "tsc -w -d -p tsconfig.json"
+        "dev": "tsc -w -d -p tsconfig.json",
+        "jscodeshift": "jscodeshift -d --transform=src/transforms/motive1-alpha-to-motive1.ts"
     },
     "author": "WebIT",
     "license": "MIT",
