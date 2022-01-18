@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "preserveWatchOutput": true,
+        "outDir": "./dist",
+        "skipLibCheck": true
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["./dist", "node_modules"]
+}
