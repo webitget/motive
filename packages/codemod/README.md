@@ -1,3 +1,5 @@
-## About
-motive is a React-based framework for building data-intensive applications in no time. It ships with [Ant Design System](https://ant.design/).
+# Motive Codemods
 
+Motive provides Codemod transformations to help upgrade your Motive codebase when a feature is deprecated.
+
+Codemods are transformations that run on your codebase programmatically. This allows for a large amount of changes to be applied without having to manually go through every file.
