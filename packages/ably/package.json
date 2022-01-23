@@ -1,0 +1,35 @@
+{
+    "name": "@webitget/motive-ably",
+    "version": "1.0.2-alpha.0",
+    "description": "motive ably. motive is a React framework for building data-intensive applications in no time. It ships with Ant Design System",
+    "private": false,
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsdx build --tsconfig tsconfig.json --runInBand --verbose --noClean",
+        "test": "tsdx test --passWithNoTests --runInBand"
+    },
+    "module": "dist/motive-ably.esm.js",
+    "size-limit": [
+        {
+            "path": "dist/motive-ably.esm.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/motive-ably.cjs.production.min.js",
+            "limit": "10 KB"
+        }
+    ],
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^7.0.5",
+        "nock": "^13.2.2",
+        "size-limit": "^7.0.5",
+        "tsdx": "^0.14.1",
+        "tslib": "^2.3.1"
+    },
+    "dependencies": {
+        "ably": "^1.2.17"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
